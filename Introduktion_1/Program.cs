@@ -1,4 +1,10 @@
-﻿// Statement (sats) - fullständig instruktion. Kan sluta på ; alternativ vara ett block { } av flera statements.
+﻿// ==============================
+// STATEMENTS
+// ==============================
+
+// Statement (sats) - fullständig instruktion.
+// Kan sluta på ; alternativt vara ett block { } av flera statements.
+
 Console.WriteLine("This line is a statement");
 
 if (true)
@@ -8,32 +14,78 @@ if (true)
 }
 
 
+// ==============================
+// EXPRESSIONS
+// ==============================
+
 // Expression (uttryck) - utvärderas till ett (1) värde.
+
 // 5 + 3
 // x * 2
 // "Hello" + " " + "World"
 
 
-// Keywords - (Av C#-språket) reserverade ord.
-// t.ex: if, for, true, while
+// ==============================
+// KEYWORDS
+// ==============================
+
+// Keywords - reserverade ord i C#-språket.
+// Exempel:
+// if
+// for
+// true
+// while
 
 
-// Identifiers - Namn som man ger på variabler, funktioner, klasser etc.
-// - Kan innehålla bokstäver, siffror och underscore (_), inte övriga tecken eller space.
-// - Måste börja med bokstav eller underscore (inte siffra)
-// - Man kan inte använda reserverad ord (keywords)
-// - variabler och parametrar skrivs i camelCase, alla andra identifiers (t.ex klasser & metoder) använder PascalCase. (enligt konvention).
-// string name = "Fredrik";
+// ==============================
+// IDENTIFIERS
+// ==============================
+
+// Identifiers - namn som man ger till variabler, metoder, klasser etc.
+//
+// Regler:
+// - Kan innehålla bokstäver, siffror och underscore (_)
+// - Kan inte innehålla mellanslag eller andra specialtecken
+// - Måste börja med en bokstav eller underscore
+// - Kan inte börja med en siffra
+// - Kan inte använda reserverade ord (keywords)
+//
+// Namngivningskonventioner i C#:
+// - Variabler och parametrar skrivs vanligtvis i camelCase
+// - Klasser och metoder skrivs vanligtvis i PascalCase
+
+string name = "Fredrik";
 
 
-// Case
-// - UPPERCASE
-// - lowercase
-// - camelCase (förstaOrderBörjarMedLitenBokstavOchAllaFöljandeOrdBörjarPåStorBokstav)
-// - PascalCase (AllaOrdBörjarMedStorBokstav)
-// - snake_case (bara_små_bokstäver_ord_avskiljda_med_underscore) <- Används ej i C#
+// ==============================
+// NAMING CONVENTIONS
+// ==============================
 
+// UPPERCASE
+// lowercase
+// camelCase
+// PascalCase
+// snake_case
+
+// camelCase
+// förstaOrdBörjarMedLitenBokstavOchAllaFöljandeOrdMedStorBokstav
+
+// PascalCase
+// AllaOrdBörjarMedStorBokstav
+
+// snake_case
+// bara_små_bokstäver_ord_avskilda_med_underscore
+// Används normalt inte för vanliga identifiers i C#.
+
+
+// ==============================
+// CASE SENSITIVITY
+// ==============================
 
 // C# är case-sensitive.
+// Det betyder att stora och små bokstäver spelar roll.
+
 int myVariable;
 int MyVariable;
+
+// Dessa räknas som två olika variabler.
